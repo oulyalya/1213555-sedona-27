@@ -26,31 +26,57 @@
 	
 	<main>
 		
-		<form class="filters">
-			<div class="checkbox-area">
-				<h2>Инфраструктура:</h2>
-				<input type="checkbox" id="check1" checked>
-				<label for="check1">Бассейн</label><Br>
-			   <input type="checkbox" id="check2">
-			   <label for="check2">Парковка</label><Br>
-			   <input type="checkbox" id="check3">
-			   <label for="check3">Wi-Fi</label>
-			</div>
+		<form class="filters" action="#" method="get">
+			<fieldset class="filter-facilities">
+				<legend>Инфраструктура:</legend>
+				<ul>
+					<li>
+						<input id="check1" type="checkbox" checked>
+						<label for="check1">Бассейн</label>
+					</li>
+					<li>
+						<input id="check2" type="checkbox">
+						<label for="check2">Парковка</label>
+					</li>
+					<li>
+						<input id="check3" type="checkbox">
+						<label for="check3">Wi-Fi</label>
+					</li>
+				</ul>	
+			</fieldset> 
 
-			<div class="checkbox-area">
-				<h2>Тип жилья:</h2>
-				<input type="checkbox" id="check4" checked>
-				<label for="check4">Гостиница</label><Br>
-			   <input type="checkbox" id="check5" checked>
-			   <label for="check5">Мотель</label><Br>
-			   <input type="checkbox" id="check6" checked>
-			   <label for="check6">Апартаменты</label>
-			</div>
+			<fieldset class="filter-accomodation">
+				<legend>Тип жилья:</legend>
+				<ul>
+					<li>
+						<input type="checkbox" id="check4" checked>
+						<label for="check4">Гостиница</label>
+					</li>
+					<li>
+						<input type="checkbox" id="check5" checked>
+						<label for="check5">Мотель</label>
+					</li>
+					<li>
+						<input type="checkbox" id="check6" checked>
+						<label for="check6">Апартаменты</label>
+					</li>
+				</ul>
+				</fieldset>
 
-			<div class="checkbox-area">
-				<p>Стоимость в сутки</p>
-				<!-- поле здесь -->
-			</div>
+			<fieldset class="filter-price">
+				<legend>Стоимость в сутки (Р):</legend>
+				<div class="range-slider"><!-- нагло скопипащено из ответов на вопросы к лекции-->
+					<label for="min-price">от 0</label>
+					<label for="max-price">до 3000</label>
+					<input id="min-price" type="number" value="0" name="min-price">
+					<input id="max-price" type="number" value="3000" name="max-price">
+					<div class="range-slider-track">
+				   		<div class="range-slider-pin range-slider-pin-min"></div>
+				    	<div class="range-slider-pin range-slider-pin-max"></div>
+					</div>
+				</div>
+				<input type="submit" value="Показать">
+			</fieldset>
 		</form>
 
 		<section class="results">

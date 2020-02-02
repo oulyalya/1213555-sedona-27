@@ -30,15 +30,12 @@
 			<img src="img/intro-welcome.svg" alt="Добро пожаловать в Седону" height="353" width="459">
 		</section>
 		<section class="intro">
-			
-				<h1 class="header-hidden">Отдых в Седоне, Аризона</h1>
+				<h1 class="visually-hidden">Отдых в Седоне, Аризона</h1>
 				<p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-			
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>	
 		</section>
-
 		
-		<h2 class="header-hidden">Почему стоит поехать в Седону</h2>
+		<h2 class="visually-hidden">Почему стоит поехать в Седону</h2>
 					
 		<section class="advantages advantages-blue">
 			<div class="advantages-description">
@@ -96,19 +93,38 @@
 		</section>
 
 		<section class="book-hotels">
-			
-			<h2 class="header-hidden">Забронировать гостиницу в Седоне</h2>
+			<h2 class="visually-hidden">Забронировать гостиницу в Седоне</h2>
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<form action="">
-				<!-- форма тут -->
-				<button type="submit">Найти</button>
+
+			<button type="button">Поиск гостиницы в Седоне</button>
+			<form action="#" method="get">
+				<p>
+					<label for="arrival">Дата заезда:</label>
+					<input id="arrival" type="date" name="arrival" placeholder="24 апреля 2017">
+				</p>
+				<p>
+					<label for="departure">Дата выезда:</label>
+					<input id="departure" type="date" name="departure" placeholder="4 июля 2017">
+				</p>
+				<p>
+					<label for="adults">Взрослые:</label>
+					<button type="button">-</button>
+					<input id="adults" type="number" name="adults" value="2">
+					<button type="button">+</button>
+				</p>
+				<p>
+					<label for="children">Дети:</label>
+					<button type="button">-</button>
+					<input id="children" type="number" name="children" value="0">
+					<button type="button">+</button>
+				</p>
+				<input type="submit" value="Найти">
 			</form>
 
 			<div class="map">
 				<img src="img/map.png" alt="Все отели и гостиницы Седоны на карте" width="1200" height="593">
 			</div>
-			
 		</section>
 
 	</main>
@@ -135,7 +151,7 @@
 		
 	</footer>
 
+	</div><!-- закрытие wrapper'а -->
 	<!-- <script src="js/script.js"></script> -->
-	</div>
  	</body>
 </html>
