@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 	<div class="wrapper">    
@@ -18,7 +20,7 @@
 		    	<li><a href="#">Информация</a></li>
 		    	<li><a href="#">Фото и видео</a></li>
 		    	<li><a href="#">Карта штата</a></li>
-		    	<li><a>Гостиницы</a></li>
+		    	<li><a class="current">Гостиницы</a></li>
 	    	</ul>
     	</nav>
 		
@@ -26,58 +28,58 @@
 	
 	<main>
 		
-		<form class="filters" action="#" method="get">
-			<fieldset class="filter-facilities">
-				<legend>Инфраструктура:</legend>
-				<ul>
-					<li>
-						<input id="check1" type="checkbox" checked>
-						<label for="check1">Бассейн</label>
-					</li>
-					<li>
-						<input id="check2" type="checkbox">
-						<label for="check2">Парковка</label>
-					</li>
-					<li>
-						<input id="check3" type="checkbox">
-						<label for="check3">Wi-Fi</label>
-					</li>
-				</ul>	
-			</fieldset> 
+			<form class="filters" action="#" method="get">
+				<fieldset class="filter-facilities">
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<input id="check1" type="checkbox" checked>
+							<label for="check1">Бассейн</label>
+						</li>
+						<li>
+							<input id="check2" type="checkbox">
+							<label for="check2">Парковка</label>
+						</li>
+						<li>
+							<input id="check3" type="checkbox">
+							<label for="check3">Wi-Fi</label>
+						</li>
+					</ul>	
+				</fieldset> 
 
-			<fieldset class="filter-accomodation">
-				<legend>Тип жилья:</legend>
-				<ul>
-					<li>
-						<input type="checkbox" id="check4" checked>
-						<label for="check4">Гостиница</label>
-					</li>
-					<li>
-						<input type="checkbox" id="check5" checked>
-						<label for="check5">Мотель</label>
-					</li>
-					<li>
-						<input type="checkbox" id="check6" checked>
-						<label for="check6">Апартаменты</label>
-					</li>
-				</ul>
-				</fieldset>
+				<fieldset class="filter-accomodation">
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" id="check4" checked>
+							<label for="check4">Гостиница</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check5" checked>
+							<label for="check5">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check6" checked>
+							<label for="check6">Апартаменты</label>
+						</li>
+					</ul>
+					</fieldset>
 
-			<fieldset class="filter-price">
-				<legend>Стоимость в сутки (Р):</legend>
-				<div class="range-slider"><!-- нагло скопипащено из ответов на вопросы к лекции-->
-					<label for="min-price">от 0</label>
-					<label for="max-price">до 3000</label>
-					<input id="min-price" type="number" value="0" name="min-price">
-					<input id="max-price" type="number" value="3000" name="max-price">
-					<div class="range-slider-track">
-				   		<div class="range-slider-pin range-slider-pin-min"></div>
-				    	<div class="range-slider-pin range-slider-pin-max"></div>
+				<fieldset class="filter-price">
+					<legend>Стоимость в сутки (Р):</legend>
+					<div class="range-slider"><!-- нагло скопипащено из ответов на вопросы к лекции-->
+						<label for="min-price">от 0</label>
+						<label for="max-price">до 3000</label>
+						<input id="min-price" type="number" value="0" name="min-price">
+						<input id="max-price" type="number" value="3000" name="max-price">
+						<div class="range-slider-track">
+					   		<div class="range-slider-pin range-slider-pin-min"></div>
+					    	<div class="range-slider-pin range-slider-pin-max"></div>
+						</div>
 					</div>
-				</div>
-				<input type="submit" value="Показать">
-			</fieldset>
-		</form>
+					<input type="submit" value="Показать">
+				</fieldset>
+			</form>
 
 		<section class="results">
 			<div class="results-text">
@@ -112,8 +114,8 @@
 						<span class="hotel-type-price  hotel-price">
 							От 4000 Р.
 						</span>
-						<a href="#" class="more-details">Подробнее</a>
-						<a href="#">Забронировать</a>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn btn-brown" href="#">Забронировать</a>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars stars-4"></div>
@@ -135,8 +137,8 @@
 						<span class="hotel-type-price  hotel-price">
 							От 3000 Р.
 						</span>
-						<a href="#" class="more-details">Подробнее</a>
-						<a href="#">Забронировать</a>
+						<a  class="btn" href="#">Подробнее</a>
+						<a  class="btn btn-brown" href="#">Забронировать</a>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars stars-3"></div>
@@ -158,8 +160,8 @@
 						<span class="hotel-type-price hotel-price">
 							От 2000 Р.
 						</span>
-						<a class="more-details" href="#">Подробнее</a>
-						<a href="#">Забронировать</a>
+						<a class="btn" href="#">Подробнее</a>
+						<a  class="btn btn-brown" href="#">Забронировать</a>
 					</div>
 					<div class="hotel-rating">
 						<div class="stars stars-2"></div>

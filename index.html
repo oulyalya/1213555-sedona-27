@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
   	<div class="wrapper">
@@ -29,6 +31,7 @@
 		<section class="welcome-pic">
 			<img src="img/intro-welcome.svg" alt="Добро пожаловать в Седону" height="353" width="459">
 		</section>
+
 		<section class="intro">
 				<h1 class="visually-hidden">Отдых в Седоне, Аризона</h1>
 				<p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -97,29 +100,29 @@
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
 
-			<button type="button">Поиск гостиницы в Седоне</button>
+			<button class="btn btn-brown btn-hotels" type="button">Поиск гостиницы в Седоне</button>
 			<form action="#" method="get">
-				<p>
+				<p class="booking-field">
 					<label for="arrival">Дата заезда:</label>
 					<input id="arrival" type="date" name="arrival" placeholder="24 апреля 2017">
 				</p>
-				<p>
+				<p class="booking-field">
 					<label for="departure">Дата выезда:</label>
 					<input id="departure" type="date" name="departure" placeholder="4 июля 2017">
 				</p>
-				<p>
+				<p class="booking-field">
 					<label for="adults">Взрослые:</label>
 					<button type="button">-</button>
 					<input id="adults" type="number" name="adults" value="2">
 					<button type="button">+</button>
 				</p>
-				<p>
+				<p class="booking-field">
 					<label for="children">Дети:</label>
 					<button type="button">-</button>
 					<input id="children" type="number" name="children" value="0">
 					<button type="button">+</button>
 				</p>
-				<input type="submit" value="Найти">
+				<input class="btn btn-search" type="submit" value="Найти">
 			</form>
 
 			<div class="map">
@@ -138,9 +141,9 @@
 
 		<div class="footer-middle">
 			<ul class="social">
-				<li><a class="social-btn tw" href="#">Twitter</a></li>
-				<li><a class="social-btn fb" href="#">Facebook</a></li>
-				<li><a class="social-btn yt" href="#">Youtube</a></li>
+				<li><a class="btn social-btn tw" href="#">Twitter</a></li>
+				<li><a class="btn social-btn fb" href="#">Facebook</a></li>
+				<li><a class="btn social-btn yt" href="#">Youtube</a></li>
 			</ul>
 			
 		</div>
