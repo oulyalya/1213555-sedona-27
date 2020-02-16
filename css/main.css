@@ -187,7 +187,7 @@ a {
 /*header end*/
 
 /*intro start*/
-.welcome-pic{
+.welcome-pic {
 	display: block;
 	width: 1200px;
 
@@ -203,7 +203,7 @@ a {
 }
 
 .welcome-pic img {
-	padding-top: 25px; 
+	padding-top: 25px;
 	margin-bottom: 271px;
 	/*width: 459px;
 	height: 353px; - размеры по макету*/
@@ -213,10 +213,12 @@ a {
 
 .intro {
 	display: block;
+	margin-top: -257px;
+	padding-top: 5px;
 	padding-bottom: 49px;
 	box-sizing: border-box;
 	background-color: white;
-	margin-top: -266px;
+	z-index: 2;
 }
 
 .intro::before {
@@ -239,7 +241,7 @@ a {
 .intro p:first-of-type {
 	max-width: 440px;
 	margin: 0 auto;
-	margin-bottom: 38px;
+	margin-bottom: 30px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -263,6 +265,7 @@ a {
 }
 
 .reasons-description {
+	width: 400px;
 	padding-top: 161px;
 	padding-right: 69px;
 	padding-left: 69px;
@@ -300,12 +303,25 @@ a {
 }
 
 .advantages-grey .advantages-description {
+	width: 400px;
 	padding-top: 50px; 	
 	padding-right: 69px;
 	padding-left: 69px;
-	padding-bottom: 64px;
+	padding-bottom: 60px;
 	text-align: center;
 	background-color: #eeeeee;
+}
+
+.advantages-grey h2 {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.advantages-grey p {
+	margin-top: 18px;
+	margin-bottom: 0;
 }
 
 .advantages-blue {
@@ -353,14 +369,16 @@ a {
 .book-hotels-intro {
 	width: 450px;
 	margin: 0 auto;
+	padding-top: 30px;
 	text-align: center;
 }
 
 .book-hotels-intro h2 {
-	padding-top: 57px;
-	font-size: 21px;
+	margin-bottom: 35px;
+	font-size: 30px;
 	line-height: 21px;
 	font-weight: 700;
+	color: black;
 }
 
 .btn-hotels {
@@ -369,9 +387,10 @@ a {
 	margin-right: auto;
 	margin-top: 52px;
 	
-	padding: 34px 140px; 
+	padding-left: 140px;
+	padding-right: 140px;
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 86px;
 
 }
 
@@ -411,6 +430,7 @@ a {
 
 .btn-search {
 	width: 100%;
+	font-size: 21px;
 	line-height: 58px;
 	text-align: center;
 }
@@ -431,6 +451,7 @@ a {
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
+	min-height: 120px;
 	margin: 0 auto;
 
 	background-color: rgba(255, 255, 255, 0.9);
@@ -463,12 +484,13 @@ a {
 .footer-left,
 .footer-middle,
 .footer-right {
-	width: 33,33%;
+	width: 400px;
 }
 
 .footer-left {
-	padding-top: 36px;
-	padding-bottom: 25px;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 130px;
 }
 
 .footer-left a {
@@ -495,7 +517,10 @@ a {
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	justify-content: center;
+
 	list-style: none;
+	padding: 0;
 }
 
 .footer-middle li {
@@ -520,9 +545,9 @@ a.fb {
 	padding-top: 3px; /* насколько это костыльно?*/
 }
 
-a.social-btn:active path {
+/*a.social-btn:active path {
 	fill: rgba(255, 255, 255, 0.3);
-}
+}*/
 
 .footer-right {
 	display: -webkit-flex;
@@ -536,6 +561,7 @@ a.social-btn:active path {
 	-o-flex-direction: row;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 }
 
 .htmlacademy-logo {
@@ -736,30 +762,29 @@ a.social-btn:active path {
 	width: 40px;
 }
 
-.up {
-	width: 11px;
-	height: 10px;
-	margin-right: 10px;
-}
-
+.up,
 .down {
 	width: 11px;
 	height: 10px;
 }
 
-a.up path,
-a.down path {
+.up {
+	margin-right: 10px;
+}
+
+.up svg,
+.down svg {
 	fill: #cacaca;
 }
 
-a.up:hover path,
-a.down:hover path {
+a.up:hover svg,
+a.down:hover svg {
 	fill: black;
 }
 
-.up:active path,
-.down:active path,
-a.listing-active path {
+a.up:active svg,
+a.down:active svg,
+.listing-active svg {
 	fill: #81b3d2;
 }
 /*sort end*/
