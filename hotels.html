@@ -28,59 +28,79 @@
 	
 	<main>
 		
-			<form class="filters" action="#" method="get">
-				<fieldset class="filter-facilities">
-					<legend>Инфраструктура:</legend>
-					<ul>
-						<li>
-							<input id="check1" type="checkbox" checked>
-							<label for="check1">Бассейн</label>
-						</li>
-						<li>
-							<input id="check2" type="checkbox">
-							<label for="check2">Парковка</label>
-						</li>
-						<li>
-							<input id="check3" type="checkbox">
-							<label for="check3">Wi-Fi</label>
-						</li>
-					</ul>	
-				</fieldset> 
+		<form class="filters" action="#" method="get">
+			<fieldset class="filter-facilities">
+				<legend>Инфраструктура:</legend>
+				<ul>
+					<li>
+						<label class="check">
+						<input class="check-input" type="checkbox" checked>
+						<span class="check-box"></span>
+						Бассейн
+						</label>
+					</li>
+					<li>
+						<label  class="check">
+						<input class="check-input" type="checkbox">
+						<span class="check-box"></span>
+						Парковка
+						</label>
+					</li>
+					<li>
+						<label  class="check">
+						<input class="check-input" type="checkbox">
+						<span class="check-box"></span>
+						Wi-Fi
+						</label>
+					</li>
+				</ul>	
+			</fieldset> 
 
-				<fieldset class="filter-accomodation">
-					<legend>Тип жилья:</legend>
-					<ul>
-						<li>
-							<input type="checkbox" id="check4" checked>
-							<label for="check4">Гостиница</label>
-						</li>
-						<li>
-							<input type="checkbox" id="check5" checked>
-							<label for="check5">Мотель</label>
-						</li>
-						<li>
-							<input type="checkbox" id="check6" checked>
-							<label for="check6">Апартаменты</label>
-						</li>
-					</ul>
-					</fieldset>
+			<fieldset class="filter-accomodation">
+				<legend>Тип жилья:</legend>
+				<ul>
+					<li>
+						<label  class="check">
+						<input class="check-input" type="checkbox" checked>
+						<span class="check-box"></span>
+						Гостиница
+						</label>
+					</li>
+					<li>
+						<label  class="check">
+						<input class="check-input" type="checkbox" checked>
+						<span class="check-box"></span>
+						Мотель
+						</label>
+					</li>
+					<li>
+						<label  class="check">
+						<input class="check-input" type="checkbox" checked>
+						<span class="check-box"></span>
+						Апартаменты
+						</label>
+					</li>
+				</ul>
+			</fieldset>
 
-				<fieldset class="filter-price">
-					<legend>Стоимость в сутки (Р):</legend>
-					<div class="range-slider"><!-- нагло скопипащено из ответов на вопросы к лекции-->
-						
-						<input id="min-price" type="number" value="0" name="min-price">
-						<input id="max-price" type="number" value="3000" name="max-price">
-						<label for="min-price">от 0</label>
-						<label for="max-price">до 3000</label>
-						<div class="range-slider-track">
-					   		<div class="range-slider-pin range-slider-pin-min"></div>
-					    	<div class="range-slider-pin range-slider-pin-max"></div>
-						</div>
+			<div class="filter-range"  bgcolor="#849d8f">
+				<div class="filter-range-title">Стоимость в сутки (р):</div>
+				<div class="price-controls">
+					<label class="min-price">от <input type="number" name="min-price" value="0"></label>
+					<label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+				</div>
+				<div class="range-controls">
+					<div class="scale">
+						<div class="bar"></div>
 					</div>
-					<input class="btn ghost-btn" type="submit" value="Показать">
-				</fieldset>
-			</form>
+					<div class="range-toggle range-toggle-min"></div>
+					<div class="range-toggle range-toggle-max"></div>
+				</div>
+				<button class="btn-transparent" type="submit">Показать</button>
+			</div>
+			
+		</form>
+		
 
 		<section class="results">
 			<div class="results-text">
