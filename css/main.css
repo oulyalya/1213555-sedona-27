@@ -144,6 +144,8 @@ a {
 .main-nav li {	
 	display: block;	
 	min-width: 239px;
+	padding-top: 18px;
+	padding-bottom: 16px;
 }
 
 .main-nav li:first-child,
@@ -168,8 +170,6 @@ a {
 }
 
 .main-nav a {
-	display: block;
-	line-height: 56px;
 	font-size: 14px;
 	font-weight: 700;
 	color: black;
@@ -466,6 +466,7 @@ a {
 	outline: none;
 	background-color: white;
 	border: 2px solid #e5e5e5;
+	padding-left: 11px;
 }
 
 .adults-label {
@@ -829,14 +830,14 @@ fieldset.filter-accomodation {
 }
 
 .check-input:disabled + .check-box {
-	background-image: url(../img/checkbox-off.svg);
-	opacity: 40%;
+	background-image: url(../img/checkbox-off-2.svg);
+	opacity: 30%;
 }
 
 .check-input:disabled:checked + .check-box {
-	background-image: url(../img/checkbox-on.svg);
+	background-image: url(../img/checkbox-on-2.svg);
 	left: -1px;
-	opacity: 40%;
+	opacity: 30%;
 }
 
 	/*range start*/
@@ -1119,7 +1120,8 @@ a.down:hover svg {
 
 a.up:active svg,
 a.down:active svg,
-.listing-active svg {
+.listing-active svg,
+a.listing-active:hover svg {
 	fill: #81b3d2;
 }
 /*sort end*/
