@@ -460,14 +460,17 @@ a {
 
 .booking-form input[type="text"]::placeholder {
 	text-transform: uppercase;
+	color: black;
 }
 
 .booking-form input[type="text"]:-moz-placeholder {
 	text-transform: uppercase;
+	color: black;
 }
 
 .booking-form input[type="text"]:-ms-input-placeholder {
 	text-transform: uppercase;
+	color: black;
 }
 
 .booking-field,
@@ -488,6 +491,7 @@ a {
 }
 
 .booking-field {
+	position: relative;
 	margin-bottom: 28px;
 }
 
@@ -496,6 +500,7 @@ a {
 	height: 38px;
 	padding-left: 13px;
 	padding-right: 40px;
+	margin-left: auto;
 
  	font: inherit;
 
@@ -525,7 +530,7 @@ a {
 }
 
 .booking-field.half:first-child {
-	margin-right: 53px;
+	margin-right: 53px;	
 }
 
 .children-label {
@@ -604,7 +609,13 @@ a {
 
 .calendar {
 	position: absolute;
-	left: 478px;
+	top: 0;
+	left: 428px;
+
+	padding: 8px 0;
+	margin: 0;
+	width: 21px;
+	height: 38px;
 
 	border: none;
 	outline: 0 none;
@@ -759,6 +770,10 @@ button.children-plus:disabled {
 	padding-top: 12px;
 	text-align: center;
 }
+
+.social-btn:active path {
+	fill: rgba(255, 255, 255, 0.3);
+}	
 
 a.fb {
 	padding-top: 13px;
@@ -976,10 +991,14 @@ fieldset.filter-accomodation {
 
 .price-controls input {
 	width: 40px;
+	height: 32px;
 	margin: 0;
 
-	color: inherit;
-	font: inherit;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 200;
+	color: white;
 
 	background: none;
 	border: none;
@@ -1090,7 +1109,7 @@ fieldset.filter-accomodation {
 	width: 100%;
 	padding-left: 72px;
 	padding-right: 72px;
-	padding-top: 10px;
+	padding-top: 12px;
 	padding-bottom: 10px;
 }
 
@@ -1151,7 +1170,7 @@ fieldset.filter-accomodation {
 
 .sort-criterias a{
 	display: block;
-	padding-bottom: 1px;
+	padding-bottom: 0;
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
@@ -1237,6 +1256,8 @@ a.listing-active:hover svg {
 
 .hotel-title {
 	margin: 0;
+	margin-top: -5px;
+	margin-bottom: 5px;
 }
 
 .hotel-title a {
@@ -1267,6 +1288,10 @@ a.listing-active:hover svg {
 	flex-direction: column;
 	margin-left: 30px;
 	justify-content: space-between;
+}
+
+.hotel-buttons {
+	margin-top: 18px;	
 }
 
 .hotel-details .btn {
