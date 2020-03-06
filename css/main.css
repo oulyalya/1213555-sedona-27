@@ -274,6 +274,11 @@ a {
 	-ms-flex-direction: row;
 	-o-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .reasons-description {
